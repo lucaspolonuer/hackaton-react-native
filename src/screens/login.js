@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {TextInput, Alert, Platform, StyleSheet, Text, View, Button} from 'react-native';
 
 type Props = {};
-export default class App extends Component<Props> {
+class Login extends React.Component<Props> {
   constructor(props) {
     super(props);
     this.state = {
@@ -20,7 +20,7 @@ export default class App extends Component<Props> {
         <TextInput style={styles.input} placeholder="Contraseña" textContentType="password"
           onChangeText={(password) => this.setState({password: password})}
           secureTextEntry={true} />
-        <Button style={styles.button} onPress={() => {
+        <Button onPress={() => {
             Alert.alert(`usuario: ${this.state.username}\npassword: ${this.state.password}`);
           }}
           title="entrar!" />
@@ -49,5 +49,7 @@ const styles = StyleSheet.create({
     borderWidth: 0.5,
     borderColor: '#d6d7da',
     width: '80%'
-  },
+  }
 });
+
+export default Login;

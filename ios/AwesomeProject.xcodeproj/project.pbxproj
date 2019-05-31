@@ -41,6 +41,8 @@
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
 		A01F86250E804AFD8F686911 /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1186DFD1E0924D3A8EACACED /* libRNGestureHandler.a */; };
 		38655D912CB24EF78E8CD10E /* libRNGestureHandler-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73CC72DE124F419D83D9658A /* libRNGestureHandler-tvOS.a */; };
+		B989C708A8F34DE68BF16E19 /* libRNImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F95F086D0D24A8788EB8587 /* libRNImagePicker.a */; };
+		805DB88625E74FBF8E204486 /* libRNTesseractOcr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0A4BA1536A439ABCC3D0F5 /* libRNTesseractOcr.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -351,6 +353,10 @@
 		75C2C2BCBECF4FC399AF45AC /* RNGestureHandler.xcodeproj */ = {isa = PBXFileReference; name = "RNGestureHandler.xcodeproj"; path = "../node_modules/react-native-gesture-handler/ios/RNGestureHandler.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		1186DFD1E0924D3A8EACACED /* libRNGestureHandler.a */ = {isa = PBXFileReference; name = "libRNGestureHandler.a"; path = "libRNGestureHandler.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		73CC72DE124F419D83D9658A /* libRNGestureHandler-tvOS.a */ = {isa = PBXFileReference; name = "libRNGestureHandler-tvOS.a"; path = "libRNGestureHandler-tvOS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		97614C6F25BD4F41A6962407 /* RNImagePicker.xcodeproj */ = {isa = PBXFileReference; name = "RNImagePicker.xcodeproj"; path = "../node_modules/react-native-image-picker/ios/RNImagePicker.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		6F95F086D0D24A8788EB8587 /* libRNImagePicker.a */ = {isa = PBXFileReference; name = "libRNImagePicker.a"; path = "libRNImagePicker.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		CE4D7AA0448C4E49A461D869 /* RNTesseractOcr.xcodeproj */ = {isa = PBXFileReference; name = "RNTesseractOcr.xcodeproj"; path = "../node_modules/react-native-tesseract-ocr/ios/RNTesseractOcr.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		7E0A4BA1536A439ABCC3D0F5 /* libRNTesseractOcr.a */ = {isa = PBXFileReference; name = "libRNTesseractOcr.a"; path = "libRNTesseractOcr.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -380,6 +386,8 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				A01F86250E804AFD8F686911 /* libRNGestureHandler.a in Frameworks */,
+				B989C708A8F34DE68BF16E19 /* libRNImagePicker.a in Frameworks */,
+				805DB88625E74FBF8E204486 /* libRNTesseractOcr.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,6 +579,8 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				75C2C2BCBECF4FC399AF45AC /* RNGestureHandler.xcodeproj */,
+				97614C6F25BD4F41A6962407 /* RNImagePicker.xcodeproj */,
+				CE4D7AA0448C4E49A461D869 /* RNTesseractOcr.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1204,6 +1214,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
+					"$(SRCROOT)/../node_modules/react-native-tesseract-ocr/ios",
 				);
 			};
 			name = Debug;
@@ -1231,6 +1243,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
+					"$(SRCROOT)/../node_modules/react-native-tesseract-ocr/ios",
 				);
 			};
 			name = Release;
@@ -1254,6 +1268,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
+					"$(SRCROOT)/../node_modules/react-native-tesseract-ocr/ios",
 				);
 			};
 			name = Debug;
@@ -1276,6 +1292,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
+					"$(SRCROOT)/../node_modules/react-native-tesseract-ocr/ios",
 				);
 			};
 			name = Release;
@@ -1311,6 +1329,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
+					"$(SRCROOT)/../node_modules/react-native-tesseract-ocr/ios",
 				);
 			};
 			name = Debug;
@@ -1346,6 +1366,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
+					"$(SRCROOT)/../node_modules/react-native-tesseract-ocr/ios",
 				);
 			};
 			name = Release;
@@ -1380,6 +1402,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
+					"$(SRCROOT)/../node_modules/react-native-tesseract-ocr/ios",
 				);
 			};
 			name = Debug;
@@ -1414,6 +1438,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
+					"$(SRCROOT)/../node_modules/react-native-tesseract-ocr/ios",
 				);
 			};
 			name = Release;
